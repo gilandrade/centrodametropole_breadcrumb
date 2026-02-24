@@ -7,7 +7,7 @@ use Drupal\Core\Breadcrumb\BreadcrumbBuilderInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Access\AccessManagerInterface;
 use Drupal\Core\Path\PathValidatorInterface;
-use Drupal\Core\Path\AliasManagerInterface;
+use Drupal\path_alias\AliasManagerInterface; #era use Drupal\Core\Path\AliasManagerInterface;
 use Drupal\Core\Link;
 
 use Drupal\Core\Menu\MenuActiveTrail;
