@@ -29,6 +29,26 @@ use Symfony\Component\Routing\Matcher\RequestMatcherInterface;
 
 
 class BreadcrumbBuilder implements BreadcrumbBuilderInterface {
+  /**
+   * @var \Drupal\Core\Entity\EntityTypeManagerInterface
+   */
+  protected $entityTypeManager;
+
+  /**
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
+   * @var \Drupal\Core\Path\PathValidatorInterface
+   */
+  protected $pathValidator;
+
+  /**
+   * @var \Drupal\path_alias\AliasManagerInterface
+   */
+  protected $aliasManager;
+  
   use \Drupal\Core\StringTranslation\StringTranslationTrait;
 
   protected $menuActiveTrail;
